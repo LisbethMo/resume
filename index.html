@@ -3,10 +3,20 @@
     <head>
 	<title>墨问的个人简历</title>
 	<link rel="stylesheet" href="./css/a.css">
+	<script src="//at.alicdn.com/t/font_497233_h5nv8og1t703haor.js"></script>
+	<style type="text/css">
+	    .icon {
+		width: 1em; height: 1em;
+		vertical-align: -0.15em;
+		fill: currentColor;
+		overflow: hidden;
+	    }
+	</style>
     </head>
     <body>
-      <div class="topNavBar clearfix">
-	<a style="float :left;" class="logo" href="#" alt="logo">
+      <div class="topNavBar">
+       <div class="innerBar clearfix">
+	<a style="float: left;" class="logo" href="#" alt="logo">
 	  <span class="rs">RS</span><span class="card">card</span>
 	</a>
         <nav style="float: right;">
@@ -20,20 +30,24 @@
 	    <li><a href="#">其他</a></li>
           </ul>
         </nav>
+       </div>
       </div>
-      <div class="banner" style="background-image: url(#)"></div>
+      <div class="banner">
+        <div class="mask"></div>
+      </div>
       <main>
-	<div class="card">
-	  <div class="picture">
-	    <img src="" alt="头像">
-	  </div>
-	  <div class="text">
-	    <div class="profile">
+	<div class="introduction">
+	  <div class="pictureAndText clearfix">
+	    <div class="picture" style="float: left;">
+	      <img src="./images/avatar.jpg" alt="头像">
+	    </div>
+	     <div class="text" style="float: right;">
 	      <span class="welcome">Hello</span>
-	      <h1>墨问</h1>
+	      <div class="triangle"></div>
+	      <h1>墨 问</h1>
 	      <p>前端工程师</p>
 	      <hr>
-	      <dl>
+	      <dl class="clearfix">
 		<dt>年龄</dt>
 		<dd>26</dd>
 		<dt>地址</dt>
@@ -43,16 +57,25 @@
 		<dt>电话</dt>
 		<dd>131xxxxxxxx</dd>
 	      </dl>
+	     </div>
 	    </div>
 	    <footer>
-	      <a href="#"><img src="#" alt="..."</a>
-	      <a href="#"><img src="#" alt="..."</a>
-	      <a href="#"><img src="#" alt="..."</a>
-	      <a href="#"><img src="#" alt="..."</a>
-	      <a href="#"><img src="#" alt="..."</a>
-	      <a href="#"><img src="#" alt="..."</a>
+	      <a href="#">
+		  <svg class="icon" aria-hidden="true" style="width: 20px height: 20px; fill: white;">
+		    <use xlink:href="#icon-icongithub"></use>
+		  </svg>
+	      </a>
+	      <a href="#">
+		  <svg class="icon" aria-hidden="true">
+		    <use xlink:href="#icon-Ankerwebicon-"></use>
+		  </svg>
+	      </a>
+	      <a href="#">
+		  <svg class="icon" aria-hidden="true">
+		    <use xlink:href="#icon-weibo"></use>
+		  </svg>
+	      </a>
 	    </footer>
-	  </div>
         </div>
         <a class="button" href="#">下载简历</a>
 

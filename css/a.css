@@ -1,6 +1,10 @@
 body {
-    background: black;
-    color: white;
+    background: #EFEFEF;
+    margin: 0;
+    padding: 0;
+}
+
+a,h1,h2,nav,ul,li,p,dl,dd,dt {
     margin: 0;
     padding: 0;
 }
@@ -17,22 +21,28 @@ a {
 }
 
 .topNavBar {
-    padding: 20px 16px 20px 16px;
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
 }
 
-.topNavBar > nav > ul {
+.innerBar {
+    padding: 0px 16px;
+}
+
+.topNavBar nav > ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.topNavBar > nav > ul > li {
+.topNavBar nav > ul > li {
     float: left;
     margin-left: 17px;
     margin-right: 17px;
 }
 
-.topNavBar > nav > ul > li > a {
+.topNavBar nav > ul > li > a {
     color: #B7B7B7;
     font-size: 12px;
     font-weight: bold;
@@ -43,7 +53,7 @@ a {
     display: block;
 }
 
-.topNavBar > nav > ul >li > a:hover {
+.topNavBar nav > ul >li > a:hover {
     border-bottom: 3px solid #E06567;
 }
 
@@ -59,4 +69,98 @@ a {
 
 .topNavBar .logo .card {
     color: #9A9DA2;
+}
+
+.banner {
+    background-image: url("../images/rs-cover.jpg");
+    height: 515px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner .mask {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 515px;
+}
+
+.introduction {
+    max-width: 940;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
+.introduction .pictureAndText {
+    padding: 50px;
+}
+
+.introduction .text {
+    padding-top: 5px;
+    width: 470px;
+}
+
+.introduction .text .welcome {
+    background-color: #E6686A;
+    color: white;
+    padding: 5px 18px;
+}
+
+.introduction .text .triangle {
+  width: 0px;
+  border-left: 15px solid #E6686A;
+  border-bottom: 15px solid transparent;
+  margin-left: 5px;
+}
+
+main h1 {
+    padding-top: 20px;
+}
+
+main p {
+    padding-bottom: 10px;
+}
+
+main hr {
+    border: 0.5px solid #DEDEDE;
+    width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+main dl > dt {
+    float: left;
+    width: 30%;
+    padding: 12px 0px;
+    font-weight: bold;
+}
+
+main dl > dd{
+    float: right;
+    width: 70%;
+    padding: 12px 0px;
+    color: #9DA0A7;
+}
+
+main footer {
+    background: #E6696A;
+    padding: 20px 15px;
+    padding-left: 350px;
+}
+
+main footer a {
+    padding: 0px 15px;
+}
+
+.introduction svg {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    fill: white;
+    padding: 7px;
+}
+
+.introduction svg:hover {
+    background: #CF5D5F;
+    border-radius: 50%;
+    padding: 7px;
 }
