@@ -4,9 +4,10 @@ body {
     padding: 0;
 }
 
-a,h1,h2,nav,ul,li,p,dl,dd,dt {
+a,h1,h2,h3,nav,ol,ul,li,p,dl,dd,dt {
     margin: 0;
     padding: 0;
+    font-weight: normal;
 }
 
 a {
@@ -84,11 +85,13 @@ a {
 }
 
 .introduction {
-    max-width: 940;
+    max-width: 940px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -330px;
     background-color: #FFFFFF;
-}
+    box-shadow: 0px 3px 15px 0px rgba(143,135,143,0.8);
+    }
 
 .introduction .pictureAndText {
     padding: 50px;
@@ -163,4 +166,165 @@ main footer a {
     background: #CF5D5F;
     border-radius: 50%;
     padding: 7px;
+}
+
+main .resume {
+    text-align: center;
+}
+
+main .resume .button {
+    border: 1px solid #CDCFD1;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 15px 50px;
+    margin-top: 40px;
+    font-weight: bold;
+    color: #3D4451;
+    transition: box-shadow 0.2s;
+   }
+
+main .resume .button:hover {
+    box-shadow: 0px 3px 15px 0px rgba(143,135,143,0.6);
+}
+
+main .briefIntroduction {
+    text-align: center;
+    margin-top: 30px;
+    font-family: kai;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+body .skills {
+    margin-top: 60px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body section h2 {
+    text-align: center;
+    color: #3D4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+body .skills ul {
+    list-style: none;
+    background: white;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 3px 15px 0px rgba(143,135,143,0.8);
+    margin-bottom: 80px;
+}
+
+body .skills ul h3 {
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+body .skills ul li {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+}
+
+body .skills ul li:nth-child(even){
+    float: right;
+    padding-right: 0px;
+}
+
+body .skills ul li .progressBar {
+    height: 5px;
+    background: #FAE1E1;
+    border-radius: 2px;
+    width: 90%;
+    margin-top: 4px;
+}
+
+body .skills ul li .progressBar .progress {
+    height: 100%;
+    background: #E6686A;
+    border-radius: 2px;
+}
+
+body .portfolio {
+    text-align: center;
+}
+
+body .portfolio nav {
+    display: inline-block;
+    margin-top: 40px; 
+}
+
+body .portfolio ol {
+    list-style: none;
+}
+
+body .portfolio ol li {
+    float: left;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+body .portfolio ol li:first-child {
+    padding-left: 0px;
+}
+
+body .portfolio .bar {
+    border-radius: 2px;
+    height: 5px;
+    background: white;
+    margin-top: 10px;
+}
+
+body .portfolio .inner-bar {
+    transition: 0.3s;
+}
+
+body .portfolio .bar.state-1 .inner-bar {
+    border-radius: 2px;
+    height: 100%;
+    background: #E6686A;
+    margin-left: 0px;
+    width: 30px;
+}
+
+body .portfolio .bar.state-2 .inner-bar {
+    border-radius: 2px;
+    height: 100%;
+    background: #E6686A;
+    margin-left: 80px;
+    width: 38px;
+}
+
+body .portfolio .bar.state-3 .inner-bar {
+    border-radius: 2px;
+    height: 100%;
+    background: #E6686A;
+    margin-left: 165px;
+    width: 90px;
+}
+
+body .portfolio .works {
+    max-width: 940px;
+    height: 597px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 200px;
+}
+
+body .portfolio .works .big {
+    position: absolute;
+}
+
+body .portfolio .works .small {
+    position: absolute;
 }
