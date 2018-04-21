@@ -21,10 +21,34 @@ a {
     clear: both;
 }
 
+.site-welcome {
+    display: none;
+    position: fixed;
+    top:0; left: 0; width: 100%; height: 100%;
+    background: #EFEFEF;
+    z-index: 1;
+    justify-content: center;
+    align-items: center
+}
+
+.site-welcome.active{
+    display: flex;
+}
+
 .topNavBar {
     padding: 20px 0px;
     position: fixed;
     width: 100%;
+    transition: all 0.5s;
+    color: #b7b7b7;
+}
+
+.topNavBar.sticky {
+    background: white;
+    padding: 10px 0;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    color: #3d4451;
 }
 
 .innerBar {
@@ -41,10 +65,11 @@ a {
     float: left;
     margin-left: 17px;
     margin-right: 17px;
+    position: relative;
 }
 
 .topNavBar nav > ul > li > a {
-    color: #B7B7B7;
+    color: inherit;
     font-size: 12px;
     font-weight: bold;
     border-top: 3px solid transparent;
@@ -52,10 +77,62 @@ a {
     padding-top: 6px;
     padding-bottom: 6px;
     display: block;
+    position: relative;
 }
 
-.topNavBar nav > ul >li > a:hover {
-    border-bottom: 3px solid #E06567;
+.topNavBar nav > ul >li.active > a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background: #E06567;
+    height: 3px;
+    animation: menuSlide 0.3s;
+}
+
+@keyframes menuSlide{
+    0%{
+	width: 0;
+    }
+    100%{
+	width: 100%;
+    }
+}
+
+.topNavBar .submenu{
+    display: none;
+    top: 100%;
+    right: 0;
+    position: absolute;
+    background: white;
+    color: #3D4451;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.topNavBar .submenu > li{
+    white-space: nowrap;
+    padding: 5px 15px;
+}
+
+.topNavBar li.active > .submenu{
+    display: block;
+    animation: submenuSlide 0.3s;
+}
+
+@keyframes submenuSlide{
+    0%{
+	margin-right: 100%;
+    }
+    100%{
+	margin-right: 0%;
+    }
+}
+
+.topNavBar .submenu > li{
+    white-space: nowrap;
+    list-style: none;
 }
 
 .topNavBar .logo {
